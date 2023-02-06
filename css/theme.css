@@ -1,0 +1,99 @@
+/*! Theme styles. (theme.css) | @author webtitov.ru */
+:root {
+  /* colors */
+  --theme-yellow: #FFC700;
+  --theme-green: #276D2A;
+  --theme-dark-green: #17551A;
+  /* else */
+  --website-width: 480px;
+  --padding-h: 24px; /* horizontal padding */
+  --padding-v: 24px; /* vertical padding */
+}
+
+body {
+  background-color: #cccccc;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.theme-wrapper {
+  padding: var(--padding-v) var(--padding-h);
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  position: relative;
+  max-width: var(--website-width);
+  margin: 0 auto;
+}
+
+.--bg-gray {
+  background-color: #F5F5F5;
+}
+.--bg-dark {
+  background-color: #2C2B2B;
+}
+.--bg-yellow {
+  background-color: var(--theme-yellow);
+}
+
+.theme-button {
+  width: 369px;
+  height: 74px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-green);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  padding-bottom: 9px;
+}
+.theme-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 9px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--theme-dark-green);
+}
+.theme-button__text {
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.theme-button:hover {
+  background-color: var(--theme-dark-green);
+}
+
+.theme-wrapper__heading {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 121.18%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  display: block;
+}
